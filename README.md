@@ -35,11 +35,13 @@ _I reviewed my four cohort projects as if I were the evaluator. I found and fixe
 
 | PR | Project | Fix | Test that proves it | Status |
 |---|---|---|---|---|
-| [#](link) | API | Prevent overselling with an atomic conditional decrement | e2e: two webhooks for the last unit | ⏳ |
-| [#](link) | API | Enforce allowed order status changes | unit: every allowed and forbidden change | ⏳ |
-| | | | | |
+| [API #3](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/3) | API | Prevent overselling the last shirt: conditional update, cancel + refund buyer B (idempotency key) | e2e: two webhooks for the last unit, refund spy called once with B's intent | ⏳ |
+| [API #4](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/4) | API | Reject negative and decimal cart quantities (`@IsInt` + `@IsPositive`) | e2e: `-3` and `1.5` return 400 | 👍 |
+| [TM #2](https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/2) | Frontend | Lint 7 → 0: remove `any`, move hooks, contexts and constants to their own files | `npm run lint` 0 errors, `npm run build` passes | ⏳ |
+| [TM #3](https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/3) | Frontend | Debounce search (300 ms) + ✕ clears the box and the filter | Network tab: typing "design" sends only `des` and `design` | ⏳ |
+| [ReNest #1](https://github.com/CAMIANAIS/ReNest/pull/1) | PM | Tradeoffs and decisions below 3 PRD features | Review by PM mentor | ⏳ |
 
-_Status: ⏳ open · ✅ merged_
+_Status: ⏳ open · 👍 approved · ✅ merged_
 
 ## 4. Key decisions and tradeoffs
 

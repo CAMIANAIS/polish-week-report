@@ -10,6 +10,12 @@
 
 <!-- Write this before fixing. If I can't write it, I don't understand it yet. -->
 
+I expected after buyer A and buyer B tried to get the last shirt, the stock went to -1.
+
+What I found: there is a check constrain, and now webhook throw 500 because webhook B tries to make the stock -1 and the check does not let this happen.
+
+Whot gets hurt: a customer pays and gets no shirt.
+
 ## Done
 
 - [ ] Task: … → PR [#](link)
@@ -17,11 +23,19 @@
 ## What I learned
 
 - Fixing harness is better than loosening the assertion
+
   > In my own words: I need my test runs same as the real app, so I have many rules considered for error status in my backend same I need to consider on tests. Before my test passes, but it was not testing the real app.
+
+-
 
 ## Blockers / questions for my mentor
 
--
+Future questions for Kevin (backend):
+
+- The refund calls Stripe, not the DB. Should it happen inside the transaction or after it? What if the refund fails?
+- Which other endpoints write more than once (for example `POST /orders`)? Do they all need a transaction? (PLAN 2.8)
+- `@Transactional()` decorator with Prisma (for example `@nestjs-cls/transactional`): is it worth it, or is `$transaction` enough for a project this size?
+- Production DB: does it have the `stock_quantity >= 0` CHECK constraint like the test DB? How do I check it safely?
 
 ## Messages to mentors
 
@@ -60,6 +74,7 @@ Link: https://github.com/CAMIANAIS/Task_Management_Code_Challenge/issues/1#issue
 > [internal Ravn Outline link removed]
 > What I did: I chose "mark as sold + pickup confirmed" to count transactions. I'll review it with real data after the first month.
 > What I want to improve:
+>
 > 1. Use my competitor research (e.g. Facebook Marketplace counts conversations)
 > 2. Show the options I considered for counting transactions, and why I chose mine
 >
@@ -75,7 +90,21 @@ Link: https://github.com/CAMIANAIS/Task_Management_Code_Challenge/issues/1#issue
 > Yesterday: Read all my mentor feedback (frontend, backend, AI, design, PM, QA) and reviewed my repos. Made a plan for Polish Week. Pedro gave LGTM on my AI module review (issue #2).
 > Today: Explained the bug found and sent my approach to Kevin, he already gave me feedback about this approach. Next: write a failing test, then the fix and send him the PR. Also replying to the frontend review: delete is fixed, and this week I'll fix lint and slow error loading.
 > Blockers: The cohort Task Management API is down (404 "Application not found"), so my deployed app can't load anything.
-> Questions: Is there a new URL for the Task Management API? @steven  Thank you for checking.:pepenote:
+> Questions: Is there a new URL for the Task Management API? @steven Thank you for checking.:pepenote:
+
+### Paulo (QA): PR #240 review + smoke vs regression, sent ✅
+
+> Hi Paulo, how are you? I hope everything is going well. :grin:
+>
+> I have an open PR—a peer review I did on a colleague's work from Friday. Could you take a look at it when you have time? https://github.com/ravn-qa/qa-nerdery-round-robbin-week-trainees/pull/240
+>
+> I’ve been thinking about your answer: "it depends on the client." I put CAP-06 into regression just to be safe, even though the risk was low.
+>
+> For the smoke test, I’d choose API-01, SC-01, and CAP-01 because they cover the core functions, and the API test is faster. SC-01 requires a cleanup step first; right now, it passes only because of bug D4, but once that’s fixed, the test will fail and block the deployment, even if the app is actually fine. Are decisions like these—what goes into smoke testing versus regression, along with the associated trade-offs (e.g., API vs. UI)—documented anywhere?
+>
+> I’m reviewing areas for improvement on this project, as we’re currently reviewing everything for our final evaluation as Nerderies. Does it make sense for me to document these decisions in my own words from a QA perspective? I could open a PR for it, if you agree.
+
+**Reply:** (waiting)
 
 ## Mentor update (sent ✅ / ❌)
 
