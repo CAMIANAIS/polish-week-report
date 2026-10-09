@@ -2,9 +2,9 @@
 
 ## Top 3 for today
 
-1.
-2.
-3.
+1. Overselling failing test
+2. Messages to mentors
+3. Fix Ethereal so CI passes
 
 ## Problems explained in my own words
 

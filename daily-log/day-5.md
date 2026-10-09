@@ -1,9 +1,9 @@
 # Day 5
 
 ## Top 3 for today
-1.
-2.
-3.
+1. Record the demo
+2. Finish the report
+3. Fix my peer's issues
 
 ## Problems explained in my own words
 <!-- Write this before fixing. If I can't write it, I don't understand it yet. -->

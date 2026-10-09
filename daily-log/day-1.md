@@ -23,7 +23,7 @@
 
 ## What I learned
 
--
+- Planning and prioritizing.
 
 ## Blockers / questions for my mentor
 

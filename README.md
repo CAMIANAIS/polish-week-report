@@ -145,6 +145,20 @@ Feedback made me grow.
 | AWS Certified Cloud Practitioner | End of November 2026 |
 | AWS Certified Solutions Architect – Associate | End of December 2026 |
 
-## 10. Daily progress
+## 10. How this repo is organized
+
+| Path | What's inside |
+| --- | --- |
+| `README.md` | This report |
+| `PLAN.md` | The week plan: feedback → task map, every task with its status and "why" |
+| `daily-log/day-1.md` … `day-5.md` | What I did each day, problems in my own words before fixing, what I learned, messages to mentors |
+| `demo/script.md` | My demo script |
+| `demo/glossary.md` | Words from my work, explained for an engineer and for a client |
+| `demo/hard-questions.md` | Questions I practice out loud, with my answers |
+| `images/` | Before/after screenshots |
+| `templates/` | PR template I use |
+| `CLAUDE.md` | My rules for this week, for me and for Claude |
+
+## 11. Daily progress
 
 [Day 1](daily-log/day-1.md) · [Day 2](daily-log/day-2.md) · [Day 3](daily-log/day-3.md) · [Day 4](daily-log/day-4.md) · [Day 5](daily-log/day-5.md) · [Full plan](PLAN.md)
