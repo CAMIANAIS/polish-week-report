@@ -5,6 +5,8 @@
 
 🎥 **Demo video (6 min, RAVN only):** [watch on Google Drive](https://drive.google.com/file/d/19mMoWAvfXx2uYVYIS_5TuVuXc8_Ymb1l/view?usp=share_link)
 
+📚 **My study atlas (RAVN only):** [concepts, gaps and glossary in my own words](https://claude.ai/artifact/1t4eDVx7cgcDuXKKAX4vGr)
+
 **TL;DR** _(write this last, 3 sentences)_
 _I reviewed my four cohort projects as if I were the evaluator. I found and fixed X bugs, the most important being … I learned …_
 
