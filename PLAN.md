@@ -139,10 +139,10 @@ _⚠️ This day is overloaded (~10 h). Before I start, I decide what moves or g
 - [ ] PR: `fix(security): skip throttling on webhooks and trust Railway proxy`.
 - **Explain it:** What IP does my app see behind a proxy, and why does that break per-user rate limits?
 
-### 2.3 🔴 Remove the public manager login (15 min)
+### 2.3 🔴 Demo accounts: keep public, document the known risk (15 min) ✅ decided
 
-- [ ] Remove the manager credentials from the README (`README.md:21-22`) and change that password in production.
-- [ ] Offer a "request demo access" note instead, or a read-only demo user.
+- ~~Remove the manager credentials from the README and change that password in production.~~ Not doing: I keep the demo accounts as a known risk.
+- [x] Document the risk under the demo accounts table in the API README (`62b4999`).
 
 > The demo accounts are public on purpose because this is the way reviewers can log in using different roles. The risk is bots or any user can for example deactivate products. I accept it because it is for learning purposes only.
 
@@ -266,7 +266,9 @@ Today there are **7 errors**, but `README.md:110` says linting is done.
 
 ## Day 4 · Thu Oct 8: Frontend tests + Design + PM + QA
 
-### 4.1 🔴 Frontend tests (2.5 h)
+### 4.1 🔴 Frontend tests (2.5 h): not doing this week
+
+> **Why not:** I prioritized the 2 PRs my frontend mentor reviewed: debounce (TM #3) and lint (TM #2).
 
 - [ ] Install `vitest`, `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/user-event` and `jsdom`. Add `test: { environment: 'jsdom' }` to the Vite config and a `"test"` script.
 - [ ] Tests:
@@ -298,7 +300,9 @@ This is direct mentor feedback.
 - [ ] Add 3 tests: rating is null, no photo (initials) and keyboard activation.
 - [ ] ⚪ Rename misspelled files (`guardaril`, `accesibilityIssue`, `workforFriday`), remove spaces from image names, rename the package (`tanstack_start_ts`), and keep one copy of the docs instead of 3.
 
-### 4.3 🔴 ReNest (PM) (1.5 h), moved up from 🟡
+### 4.3 🔴 ReNest (PM) (1.5 h), moved up from 🟡: tradeoffs done, rest is a next step
+
+> **Why:** my PM mentor didn't ask for the rest. I asked her where I should put the tradeoffs, and she told me at the end of each epic. That is done in ReNest PR #1.
 
 Already done after feedback ✅: intros, glossary, assumption callouts, tables.
 
@@ -310,7 +314,9 @@ Already done after feedback ✅: intros, glossary, assumption callouts, tables.
 - [ ] Use one consistent problem statement (README lines 5 and 7), keep feature IDs separate from ranks, remove leftover template text, and make the docs agree (video length, value proposition).
 - [ ] ⚪ Compress the 9.8 MB GIF.
 
-### 4.4 🟡 QA submission (1 h)
+### 4.4 🟡 QA submission (1 h): not doing, QA process ended
+
+> **Why:** the QA submission ended with all my PRs approved on Friday. I asked my QA mentor about the Ravn QA process, and he told me to focus on criticality: sitemap + criticality → high test cases → high test scenarios → smoke suite → rest of test cases / test scenarios → regression suite. **Next step:** add criticality to my sitemap, because the smoke suite depends on it.
 
 My QA work is already strong (almost all mentor reviews approved). Only polish here.
 
