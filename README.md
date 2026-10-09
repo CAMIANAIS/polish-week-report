@@ -5,6 +5,8 @@
 
 🎥 **Demo video (8 min, RAVN only):** [watch on Google Drive](https://drive.google.com/file/d/1TELOWELn1Fiw1YZK4OzpPb0mXZ4v10Xw/view?usp=sharing)
 
+🌐 **My week in 5 minutes:** [one-page summary](https://progress-palette-55.lovable.app)
+
 📚 **My study atlas (RAVN only):** [concepts, gaps and glossary in my own words](https://claude.ai/artifact/1t4eDVx7cgcDuXKKAX4vGr)
 
 **My week in short:** I polished my projects with my mentors' feedback. The most important fix is overselling, and it protects buyers. The biggest thing I learned is to be a skeptic: I ask for feedback from mentors, peers and another AI, I check myself, and I write my report, dailies, PRs and issues in my own words, so I understand why I am doing something and can explain it to an engineer and to a client.
@@ -56,6 +58,7 @@
 | [API #3](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/3)             | API      | Prevent overselling the last shirt: conditional update, cancel + refund buyer B (idempotency key) | e2e: two webhooks for the last unit, refund spy called once with B's intent | ⏳     |
 | [API #4](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/4)             | API      | Reject negative and decimal cart quantities (`@IsInt` + `@IsPositive`)                            | e2e: `-3` and `1.5` return 400                                              | ✅     |
 | [API #5](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/5)             | API      | After merging #1 and #4, main CI broke. I found the old URL with grep (`/auth/signin` → `/auth/sign-in`) and changed the expected status to 422, because the test was not using the exception factory I have in production | CI passed on main | ✅     |
+| [API #10](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/10)           | API      | My peer's review: README and CLAUDE.md now match the code, local e2e setup documented, real test instead of `it.todo` (closes #7, #9) | I re-ran all the tests: 194/194 unit, 30/30 e2e | ✅     |
 | [TM #2](https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/2) | Frontend | Lint 7 → 0: remove `any`, move hooks, contexts and constants to their own files                   | `npm run lint` 0 errors, `npm run build` passes                             | ⏳     |
 | [TM #3](https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/3) | Frontend | Debounce search (300 ms) + ✕ clears the box and the filter                                        | Network tab: typing "design" sends only `des` and `design`                  | ⏳     |
 | [ReNest #1](https://github.com/CAMIANAIS/ReNest/pull/1)                     | PM       | Tradeoffs and decisions below 3 PRD features                                                      | Review by PM mentor                                                         | ⏳     |
