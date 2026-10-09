@@ -18,7 +18,8 @@ Whot gets hurt: a customer pays and gets no shirt.
 
 ## Done
 
-- [ ] Task: … → PR [#](link)
+- [x] Overselling e2e test + first fix (conditional update) → [API PR #3](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/3) (draft)
+- [x] Ethereal account renewed, so the reset-password e2e test passes again in CI
 
 ## What I learned
 
@@ -108,6 +109,4 @@ Link: https://github.com/CAMIANAIS/Task_Management_Code_Challenge/issues/1#issue
 
 ## Mentor update (sent ✅ / ❌)
 
-> **Done:** …
-> **Learned:** …
-> **Next / blocked:** …
+See "Messages to mentors" above.

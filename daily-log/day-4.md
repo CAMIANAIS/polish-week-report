@@ -12,7 +12,9 @@
 
 ## Done
 
-- [ ] Task: … → PR [#](link)
+- [x] Demo accounts: kept public, risk documented in the API README → [`62b4999`](https://github.com/CAMIANAIS/T-Shirt-Store-API/commit/62b4999)
+- [x] `handleDelete` refactor + generic `useDebounce` hook → [TM PR #3](https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/3)
+- [x] Main CI red after merging API #1 + #4 → fixed → [API PR #5](https://github.com/CAMIANAIS/T-Shirt-Store-API/pull/5)
   > The demo accounts are public on purpose because this is the way reviewers can log in using different roles. The risk is bots or any user can for example deactivate products. I accept it because it is for learning purposes only.
 
 ## What I learned
@@ -51,9 +53,8 @@ Today
   -I found All Hands Q4 session very helpful for all the advices they shared to us about where Ravn is going and how we can help.
   Any blocker right now
 
-**Learned:** …
+**Replies on the PR:**
 
 - handleDelete thread: "This handleDelete could keep growing, but my return is clean and easy to read. e0de5ce"
 - Debounce thread: "I added a useDebounce hook, generic and reusable. Thanks for challenging me, Brayan! 2e0bdee"
 
-> **Next / blocked:** …

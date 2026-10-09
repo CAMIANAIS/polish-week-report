@@ -66,6 +66,5 @@ Mi plan es el siguiente:
 
 ## Mentor update (sent ✅ / ❌)
 
-> **Done:** …
 > **Learned:** T-shirt store sells single shirts, and a customer can buy 1. So today the rule is just "positive" not min(1)
-> **Next / blocked:** …
+See "Messages to mentors" above.
