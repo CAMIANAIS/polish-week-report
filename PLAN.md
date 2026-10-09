@@ -144,6 +144,8 @@ _⚠️ This day is overloaded (~10 h). Before I start, I decide what moves or g
 - [ ] Remove the manager credentials from the README (`README.md:21-22`) and change that password in production.
 - [ ] Offer a "request demo access" note instead, or a read-only demo user.
 
+> The demo accounts are public on purpose because this is the way reviewers can log in using different roles. The risk is bots or any user can for example deactivate products. I accept it because it is for learning purposes only.
+
 ### 2.4 🟡 Prisma errors → correct HTTP codes (1 h)
 
 - [ ] In the global exception filter (`all-exceptions.filter.ts:44-50`), map `P2025` (record not found) → 404 and `P2002` (unique constraint) → 409.

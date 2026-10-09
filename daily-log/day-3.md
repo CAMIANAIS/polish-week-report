@@ -60,9 +60,9 @@ Mi plan es el siguiente:
 - Frontend (Brayan): PRs TM #2 and #3 sent ✅. Brayan commented on #3: move the ✕ handler out of the JSX (`handleDelete`) and a challenge to make a `useDebounce` hook.
 - Frontend (Steven): no reply yet.
 - Design (Javier, César, Adri): plan message sent ✅ (text above). Waiting for reply.
-- PM (Daniela): ReNest #1 link: sent ✅ / ❌
-- General channel daily update: sent ✅ / ❌
-- Julio (peer review): API + frontend repo links: sent ✅ / ❌
+- PM (Daniela): ReNest #1 link: sent ✅
+- General channel daily update: sent ✅
+- Julio (peer review): API + frontend repo links: sent ✅
 
 ## Mentor update (sent ✅ / ❌)
 
