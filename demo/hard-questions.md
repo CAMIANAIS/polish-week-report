@@ -34,3 +34,10 @@ Write a short answer under each question, then practice saying it without readin
 19. Which parts did AI write, and how did you verify them?
 20. What would you do differently if you started the cohort again?
 21. What feedback did you get, and what did you change because of it?
+
+## Peer review: webhook questions (line numbers on `main`)
+22. How does the handler make sure the same Stripe event isn't processed twice? (`webhooks.service.ts:22-29`, `schemaERD.sql:303`)
+    > **My answer:** `stripe_event_id` is the primary key. The second time, the insert fails with P2002, the catch returns 200, so Stripe stops retrying.
+23. Why does `payment_intent.succeeded` check for `metadata.orderId` before doing anything? (`webhooks.service.ts:31-39`)
+24. Why is `clearCart` called outside the transaction, and what happens if it fails? (`webhooks.service.ts:134-152`)
+25. What happens if the stock is already 0 when the payment succeeds? (`webhooks.service.ts:64-69`, `schemaERD.sql:141`) On `main` vs. in PR #3?
