@@ -103,14 +103,14 @@ _Status: ⏳ open · 👍 approved · ✅ merged_
 
 I used concepts I learned in my CCA-F certification preparation.
 
-### 1. My rules for Claude (`CLAUDE.md`)
+### My rules for Claude (`CLAUDE.md`)
 
 - Teach, ask questions and quiz me. Don't write my fixes, tests or report text.
 - Push me to explain _why_, and to compare options and tradeoffs.
 - Keep messages short and in simple English.
 - Remind me of these rules when I drift from them.
 
-### 2. My 2 skills
+### My 2 skills
 
 The description is how Claude chooses which skill to use.
 
@@ -119,17 +119,17 @@ The description is how Claude chooses which skill to use.
 | `consistency-kebab-url-endpoints` | Audit NestJS controllers and Markdown docs for kebab-case URL violations: route naming, endpoint rename, camelCase/snake_case paths. Reports file, line, and the corrected path. |
 | `verify-kebab-rename-e2e` | Run e2e tests to verify a kebab-case URL rename succeeded: old paths return 404, new paths respond with the expected status. Use after applying renames from the audit skill. |
 
-### 3. How I controlled it
+### How I controlled it
 
 Permissions, pre-commit hooks, CI and the DB `CHECK` constraint. These are deterministic.
 
-### 4. How I checked it
+### How I checked it
 
 - Independent reviewers: my mentors reviewed my PRs, and a peer reviewed my projects.
 - The times I caught AI-generated code that didn't match my file.
 - The Claude session I work with is not able to see its own mistakes. So when I want an immediate second opinion, I use another Claude Desktop session or Codex to criticize the AI output.
 
-### 5. When AI was wrong
+### When AI was wrong
 
 I was writing issues for a peer's project. I normally ask another AI to criticize my critique and suggest what else I could add, because I want my issues to help the most. It gave me terms that his project did not have. I checked his repo, and those terms were not there. I kept only two acceptance criteria that help to measure the fix.
 
