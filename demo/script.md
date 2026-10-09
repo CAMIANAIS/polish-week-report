@@ -13,7 +13,7 @@ This week I did: / I asked them for feedback, / asked my questions, / and learne
 I'm ready to move forward / and use these communication skills and this product mindset / in every project.
 
 > **Other version (from the second column of the old table, so pick one or merge):**
-> This week I reviewed my 4 projects as if I were the evaluator, using AI first. I pasted all the transcripts of meetings I had with my mentors, so I have their feedback. I made a proposal of what I would fix, when, and why I chose those. I asked them about the approach and got their acceptance. I worked on PRs that were reviewed by the backend mentor (Kevin) and the frontend mentor (Brayan). The rest (PM, design) are mostly from feedback.
+> This week I reviewed my 4 projects as if I were the evaluator, using AI first. I pasted all the transcripts of meetings I had with my mentors, so I have their feedback. I made a proposal of what I would fix, when, and why I chose those. I asked them about the approach and got their acceptance. I worked on PRs that were reviewed by my backend mentor and my frontend mentor. The rest (PM, design) are mostly from feedback.
 
 ---
 
@@ -25,7 +25,7 @@ I added 1 PR with an e2e test for overselling, / and 2 e2e tests for cart valida
 
 I compared my docs against my code. / On design, I needed to work on the Wednesday task better.
 
-**Show:** TM PR #3 (Brayan thread)
+**Show:** TM PR #3 (frontend mentor thread)
 
 ---
 
@@ -65,7 +65,7 @@ I used concepts I learned in my CCA-F certification preparation.
 
 **How I controlled it:** / permissions, pre-commit, CI, DB CHECK. / These are deterministic.
 
-**How I checked it:** / independent reviewers. / Kevin, Brayan and Pedro as mentors, / and Julio as a peer reviewer. / And the times I caught AI-generated code that didn't match my file (design deliverables).
+**How I checked it:** / independent reviewers: / my mentors / and a peer reviewer. / And the times I caught AI-generated code that didn't match my file (design deliverables).
 
 **What I learned:** / my Claude session is not able to see its own mistakes. / So when I want an immediate second opinion, / I use another Claude Desktop session or Codex / to criticize the AI output.
 
@@ -75,7 +75,7 @@ I used this many times, / but especially on QA deliverables, / where I needed a 
 
 ## 4:15–5:00 · What I learned + next
 
-Feedback made me grow: / mentors and Julio challenged my code, / and I refactored it into reusable pieces.
+Feedback made me grow: / mentors and my peer challenged my code, / and I refactored it into reusable pieces.
 
 I used grep from my certification study time / on a real bug.
 

@@ -40,12 +40,12 @@ Yesterday
 - Backend: merged my PR, my CI did not pass and I fixed it, with valuable lessons after that.
 - Frontend: mentor's challenge done: generic `useDebounce` hook + `handleDelete` refactor, and I replied on the PR.
 - Report section: How I used AI during this time.
-- Peer review: reviewed Julio's API + frontend, 4 issues opened (refund bug, open GraphQL proxy, mobile search, skeleton flash). He also opened issues on my code.
-- Speech rehearsal with Julio: I got great feedback.
+- Peer review: reviewed my peer's API + frontend, 4 issues opened (refund bug, open GraphQL proxy, mobile search, skeleton flash). He also opened issues on my code.
+- Speech rehearsal with my peer: I got great feedback.
 
 Today
 - Report README filled: fixes, decisions and tradeoffs.
-- Peer review: I started to work on the 4 issues Julio opened on my API. With PR #10 I fixed 2 of them; #6 and #8 are a next step.
+- Peer review: I started to work on the 4 issues my peer opened on my API. With PR #10 I fixed 2 of them; #6 and #8 are a next step.
 - Close all gaps of my learning with my own words on my artifact.
 - Next today: polish my daily logs, make the report public and share it here.
 

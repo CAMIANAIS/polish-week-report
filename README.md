@@ -7,8 +7,7 @@
 
 📚 **My study atlas (RAVN only):** [concepts, gaps and glossary in my own words](https://claude.ai/artifact/1t4eDVx7cgcDuXKKAX4vGr)
 
-**TL;DR** _(write this last, 3 sentences)_
-_I reviewed my four cohort projects as if I were the evaluator. I found and fixed X bugs, the most important being … I learned …_
+**TL;DR:** I polished my projects with my mentors' feedback. The most important fix is overselling, and it protects buyers. The biggest thing I learned is to be a skeptic: I ask for feedback from mentors, peers and another AI, I check myself, and I write my report, dailies, PRs and issues in my own words, so I understand why I am doing something and can explain it to an engineer and to a client.
 
 ---
 

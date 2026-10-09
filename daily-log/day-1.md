@@ -23,7 +23,7 @@
 
 ## Done
 
-- [x] Pedro gave "LGTM" on issue #2 Pedro created respect to 2 skills I created checking kebab-case use on endpoints.
+- [x] My AI mentor gave "LGTM" on issue #2 he created respect to 2 skills I created checking kebab-case use on endpoints.
 
 ## What I learned
 

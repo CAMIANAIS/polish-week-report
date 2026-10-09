@@ -2,9 +2,9 @@
 
 ## Top 3 for today
 
-1. Close frontend (Brayan's 2 comments)
+1. Close frontend (my frontend mentor's 2 comments)
 2. Structure demo day+report
-3. Peer review with Julio
+3. Peer review with my peer
 
 ## Problems explained in my own words
 
@@ -32,7 +32,7 @@
 ## Mentor update (sent ✅ / ❌)
 
 **Done:**
-To Brayan
+To my frontend mentor
 Reply: "This handleDelete could keep growing, but my return is clean and easy to read."
 Commit: https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/3/commits/e0de5ce
 
@@ -43,18 +43,18 @@ Yesterday
 - Backend: PR reviewed and approved, I already applied mentor's suggestion.
 - Frontend: PR's reviewed by my mentor.
 - PM: tradeoffs + decisions under features already on PR.
-- Peer review: I sent my repos to Julio so we could help improve each other.
+- Peer review: I sent my repos to my peer so we could help improve each other.
 
 Today
 
 - Frontend: My mentor challenged me and I accepted the challenge, already commit my changes on my PR regarding this.
 - Re-plan of the rest of the days: what's done / next step / cut
-- Peer review: review Julio's API + frontend
+- Peer review: review my peer's API + frontend
   -I found All Hands Q4 session very helpful for all the advices they shared to us about where Ravn is going and how we can help.
   Any blocker right now
 
 **Replies on the PR:**
 
 - handleDelete thread: "This handleDelete could keep growing, but my return is clean and easy to read. e0de5ce"
-- Debounce thread: "I added a useDebounce hook, generic and reusable. Thanks for challenging me, Brayan! 2e0bdee"
+- Debounce thread: "I added a useDebounce hook, generic and reusable. Thanks for challenging me! 2e0bdee"
 

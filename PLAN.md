@@ -62,8 +62,8 @@ _Reality: the morning went to reading feedback and reviewing my repos. That was 
 - [ ] Send the messages (my own words; structure: what I did → what's next → one question):
   - [ ] Cohort lead/mentor: evaluation format + link to this repo + "PR by PR, or a summary on Friday?"
   - [ ] Reply on Task Management **issue #1**: delete fixed (`5e2bd27`), which findings I'll fix this week and which I'll leave, with reasons.
-  - [x] Brayan: delete is fixed, please check again.
-  - [x] Pedro: comment on **PR #1**, issue #2 is addressed, please re-review.
+  - [x] My frontend mentor: delete is fixed, please check again.
+  - [x] My AI mentor: comment on **PR #1**, issue #2 is addressed, please re-review.
 - [ ] Copy `templates/PULL_REQUEST_TEMPLATE.md` into `.github/pull_request_template.md` in the T-Shirt Store API and Task Management repos.
 - [ ] Run the e2e tests locally (needs Testcontainers) and write down the real counts. Known so far: **193 unit passed, 1 todo**.
 - **Done when:** the messages are sent and I know my real test counts.
@@ -183,7 +183,7 @@ _⚠️ This day is overloaded (~10 h). Before I start, I decide what moves or g
 
 ### 2.9 🆕 🔴 Close the AI-module loop (30 min)
 
-- [ ] After Pedro re-reviews, merge PR #1 (kebab-case URLs). Today main still has `paymentLink`, `forgotpassword`, `resetpassword`.
+- [ ] After my AI mentor re-reviews, merge PR #1 (kebab-case URLs). Today main still has `paymentLink`, `forgotpassword`, `resetpassword`.
 - [ ] `.claude/skills/*` are symlinks to `../../.agents/skills/`, which isn't in the repo. Commit the real skill files so anyone who clones gets them.
 - **Explain it:** Personal skills vs project skills vs org skills: where does each live, and why?
 

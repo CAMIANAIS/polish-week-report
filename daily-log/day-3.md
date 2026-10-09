@@ -56,13 +56,13 @@ Mi plan es el siguiente:
 
 ## Messages to mentors
 
-- Backend (Kevin): PRs API #3 and #4 sent ✅. Kevin approved #4 and suggested `@IsPositive()` (applied in `cc6f562`). #3 marked ready for review + mention on the PR ✅
-- Frontend (Brayan): PRs TM #2 and #3 sent ✅. Brayan commented on #3: move the ✕ handler out of the JSX (`handleDelete`) and a challenge to make a `useDebounce` hook.
-- Frontend (Steven): no reply yet.
-- Design (Javier, César, Adri): plan message sent ✅ (text above). Waiting for reply.
-- PM (Daniela): ReNest #1 link: sent ✅
+- Backend mentor: PRs API #3 and #4 sent ✅. He approved #4 and suggested `@IsPositive()` (applied in `cc6f562`). #3 marked ready for review + mention on the PR ✅
+- Frontend mentor: PRs TM #2 and #3 sent ✅. He commented on #3: move the ✕ handler out of the JSX (`handleDelete`) and a challenge to make a `useDebounce` hook.
+- Frontend mentor (lead): no reply yet.
+- Design mentors: plan message sent ✅ (text above). Waiting for reply.
+- PM mentor: ReNest #1 link: sent ✅
 - General channel daily update: sent ✅
-- Julio (peer review): API + frontend repo links: sent ✅
+- Peer review: API + frontend repo links: sent ✅
 
 ## Mentor update (sent ✅ / ❌)
 
