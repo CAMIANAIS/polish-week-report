@@ -6,8 +6,6 @@ Read one line, pause, then read the next. `/` = short pause.
 
 ## 0:00–0:30 · Who I am + what I did
 
-My regret was: after every area, / I didn't communicate again with my mentors / to show them my approach or my open questions.
-
 This week I did: / I asked them for feedback, / asked my questions, / and learned deeply what was blurry.
 
 I'm ready to move forward / and use these communication skills and this product mindset / in every project.
