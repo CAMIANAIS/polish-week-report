@@ -2,9 +2,9 @@
 
 ## Top 3 for today
 
-1. Set up this repo and ask my mentor about the evaluation format
-2. Fix overselling (T-Shirt Store API)
-3. Enforce order status rules (T-Shirt Store API)
+1. Plan the week
+2. Define my approach to mentors
+3. Explain the overselling bug in my own words
 
 ## Problems explained in my own words
 

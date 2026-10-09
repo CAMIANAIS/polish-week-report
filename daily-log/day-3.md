@@ -2,9 +2,9 @@
 
 ## Top 3 for today
 
-1. 1.1
-2. 2.0
-3. 3.1
+1. Finish the overselling fix (1.1)
+2. Cart quantity validation (2.0)
+3. Lint to zero on the frontend (3.1)
 
 ## Problems explained in my own words
 
