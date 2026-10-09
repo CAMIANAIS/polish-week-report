@@ -3,7 +3,7 @@
 > Ravn cohort, AQP · Oct 5 – 9, 2026
 > One week to revisit my work, fix what I would do differently, and show what I learned.
 
-🎥 **Demo video (6 min, RAVN only):** [watch on Google Drive](https://drive.google.com/file/d/19mMoWAvfXx2uYVYIS_5TuVuXc8_Ymb1l/view?usp=share_link)
+🎥 **Demo video (8 min, RAVN only):** [watch on Google Drive](https://drive.google.com/file/d/1TELOWELn1Fiw1YZK4OzpPb0mXZ4v10Xw/view?usp=sharing)
 
 📚 **My study atlas (RAVN only):** [concepts, gaps and glossary in my own words](https://claude.ai/artifact/1t4eDVx7cgcDuXKKAX4vGr)
 
