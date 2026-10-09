@@ -57,15 +57,15 @@ _Reality: the morning went to reading feedback and reviewing my repos. That was 
 
 ### 1.0 🔴 Setup + messages (1 h)
 
-- [ ] Push this repo to GitHub. **Check visibility first:** there are no private details in tracked files (`feedback/raw/` is ignored), and Ravn is OK with it being public. If unsure, keep it private and share it with my mentor.
+- [x] Push this repo to GitHub. **Check visibility first:** there are no private details in tracked files (`feedback/raw/` is ignored), and Ravn is OK with it being public. If unsure, keep it private and share it with my mentor.
 - [ ] Write `feedback/summary.md` in my own words (no names).
 - [ ] Send the messages (my own words; structure: what I did → what's next → one question):
   - [ ] Cohort lead/mentor: evaluation format + link to this repo + "PR by PR, or a summary on Friday?"
-  - [ ] Reply on Task Management **issue #1**: delete fixed (`5e2bd27`), which findings I'll fix this week and which I'll leave, with reasons.
+  - [x] Reply on Task Management **issue #1**: delete fixed (`5e2bd27`), which findings I'll fix this week and which I'll leave, with reasons.
   - [x] My frontend mentor: delete is fixed, please check again.
   - [x] My AI mentor: comment on **PR #1**, issue #2 is addressed, please re-review.
 - [ ] Copy `templates/PULL_REQUEST_TEMPLATE.md` into `.github/pull_request_template.md` in the T-Shirt Store API and Task Management repos.
-- [ ] Run the e2e tests locally (needs Testcontainers) and write down the real counts. Known so far: **193 unit passed, 1 todo**.
+- [x] Run the e2e tests locally (needs Testcontainers) and write down the real counts. Known so far: **193 unit passed, 1 todo**.
 - **Done when:** the messages are sent and I know my real test counts.
 
 ### 1.1 🔴 Two buyers can pay for the last item (3 h)
@@ -73,14 +73,14 @@ _Reality: the morning went to reading feedback and reviewing my repos. That was 
 **The bug:** In `src/webhooks/webhooks.service.ts:64-69`, stock is checked when the order is created (`orders.service.ts:81-96`) but only decremented when the payment webhook arrives. If two people pay for the last unit, the second decrement breaks the database rule that stock can't go below zero. The transaction rolls back, Stripe retries forever, and the customer is charged with no paid order.
 
 - [x] Write the problem in my own words in the daily log. Draw the timeline: Buyer A pays, Buyer B pays, webhook A runs, webhook B runs.
-- [ ] Write a **failing** e2e test first: two orders for a variant with stock = 1, both payment webhooks fire, and I check the final state.
-- [ ] Fix: replace the plain `decrement` with a conditional update. Use `updateMany` with `where: { id, stock_quantity: { gte: qty } }`, then check `result.count`. If it is 0, the item sold out.
-- [ ] Decide what happens when it sold out, and write down why:
+- [x] Write a **failing** e2e test first: two orders for a variant with stock = 1, both payment webhooks fire, and I check the final state.
+- [x] Fix: replace the plain `decrement` with a conditional update. Use `updateMany` with `where: { id, stock_quantity: { gte: qty } }`, then check `result.count`. If it is 0, the item sold out.
+- [x] Decide what happens when it sold out, and write down why:
   - Option A: mark the order as failed and refund through Stripe.
   - Option B: reserve stock when the order is created and release it if payment expires. (The Stripe workshop described this as "like movie tickets: you have 10 minutes".)
   - Either way, the webhook must return 200 so Stripe stops retrying.
-- [ ] The test passes. The PR is called `fix(orders): prevent overselling when two payments race for the last unit`.
-- [ ] Send the PR to my backend mentor: "Does this approach make sense?"
+- [x] The test passes. The PR is called `fix(orders): prevent overselling when two payments race for the last unit`.
+- [x] Send the PR to my backend mentor: "Does this approach make sense?"
 - **Explain it:** Why does a check followed by a later decrement fail under concurrency? Why is `updateMany` with a `where` clause atomic? What did I choose, A or B, and what is the tradeoff?
 - **Done when:** the PR is open, the test proves the race is handled, and I can draw the timeline from memory.
 
@@ -117,9 +117,9 @@ _⚠️ This day is overloaded (~10 h). Before I start, I decide what moves or g
 
 **The bug:** cart quantity validation is too weak. Details are in my private notes (`feedback/raw/review-findings.md`) until it's fixed.
 
-- [ ] Failing test first: invalid quantities are rejected with 400.
-- [ ] Fix the validation in both DTOs.
-- [ ] PR: `fix(carts): validate cart quantities`.
+- [x] Failing test first: invalid quantities are rejected with 400.
+- [x] Fix the validation in both DTOs.
+- [x] PR: `fix(carts): validate cart quantities`.
 - **Explain it:** Why isn't `@IsNumber` enough? Where else does a bad value travel in my code if it gets past the DTO?
 
 ### 2.1 🔴 Payment Links (1.5 h)
@@ -172,8 +172,8 @@ _⚠️ This day is overloaded (~10 h). Before I start, I decide what moves or g
 
 ### 2.7 🔴 README truth pass (45 min)
 
-- [ ] Use the real test numbers everywhere. Today `README.md:112` and `:179` give two different e2e counts.
-- [ ] Update `CLAUDE.md:82`: the session-revocation gap was fixed in `78c793b`.
+- [x] Use the real test numbers everywhere. Today `README.md:112` and `:179` give two different e2e counts.
+- [x] Update `CLAUDE.md:82`: the session-revocation gap was fixed in `78c793b`.
 - [ ] Add a "Known limitations" section (include 2.11 if I don't fix it) and a "What I fixed in Polish Week" section that links to the PRs.
 
 ### 2.8 ⚪ If time is left
@@ -183,7 +183,7 @@ _⚠️ This day is overloaded (~10 h). Before I start, I decide what moves or g
 
 ### 2.9 🆕 🔴 Close the AI-module loop (30 min)
 
-- [ ] After my AI mentor re-reviews, merge PR #1 (kebab-case URLs). Today main still has `paymentLink`, `forgotpassword`, `resetpassword`.
+- [x] After my AI mentor re-reviews, merge PR #1 (kebab-case URLs). Today main still has `paymentLink`, `forgotpassword`, `resetpassword`.
 - [ ] `.claude/skills/*` are symlinks to `../../.agents/skills/`, which isn't in the repo. Commit the real skill files so anyone who clones gets them.
 - **Explain it:** Personal skills vs project skills vs org skills: where does each live, and why?
 
@@ -212,9 +212,9 @@ _⚠️ This day is overloaded (~10 h). Before I start, I decide what moves or g
 Today there are **7 errors**, but `README.md:110` says linting is done.
 
 - [ ] Type `fetchData` with a generic: `fetchData<T>(query, variables): Promise<T>`. No `any` (`src/FetchData/fetchData.ts:4,18`).
-- [ ] Fix the 5 `react-refresh/only-export-components` errors by moving shared constants and types out of component files (`PointEstimate` from `Card.tsx:17`, `statuses` from `Dashboard.tsx:12`, plus `NotificationContext.tsx:28`, `SearchContext.tsx:34`, `TaskColumn.tsx:12`) into `src/types/` and `src/constants/`.
+- [x] Fix the 5 `react-refresh/only-export-components` errors by moving shared constants and types out of component files (`PointEstimate` from `Card.tsx:17`, `statuses` from `Dashboard.tsx:12`, plus `NotificationContext.tsx:28`, `SearchContext.tsx:34`, `TaskColumn.tsx:12`) into `src/types/` and `src/constants/`.
 - [ ] Remove the dead mock data in `Task.tsx:18-94` and the empty `handleCancel` (`Card.tsx:78`).
-- [ ] PR: `refactor: fix lint errors and move shared types out of components`.
+- [x] PR: `refactor: fix lint errors and move shared types out of components`.
 - **Done when:** `npm run lint` shows 0 errors.
 
 ### 3.2 🔴 Editing a task: when does it save? (2 h)
@@ -232,9 +232,9 @@ Today there are **7 errors**, but `README.md:110` says linting is done.
 
 ### 3.3 🔴 Search and filters (1 h)
 
-- [ ] Debounce search by about 300 ms with a small `useDebounce` hook (`TopNavigationBar.tsx:19`).
+- [x] Debounce search by about 300 ms with a small `useDebounce` hook (`TopNavigationBar.tsx:19`).
 - [ ] Add `placeholderData: keepPreviousData` to the tasks query so changing a filter doesn't flash a full-screen "Loading" (`Dashboard.tsx:24`).
-- [ ] PR: `perf(search): debounce input and keep previous data while refetching`.
+- [x] PR: `perf(search): debounce input and keep previous data while refetching`.
 - **Explain it:** How many requests does typing "design" send before and after the fix?
 
 ### 3.4 🟡 Accessible modals (1.5 h)
@@ -337,10 +337,10 @@ My QA work is already strong (almost all mentor reviews approved). Only polish h
 
 ### 5.1 🔴 Finish the report (`README.md` of this repo) (2 h)
 
-- [ ] Fill in every section. Each claim links to a PR or commit.
+- [x] Fill in every section. Each claim links to a PR or commit.
 - [ ] Add a "Feedback I received → what I changed" section, using the map at the top of this plan.
-- [ ] Add before/after screenshots or a short GIF for at least 2 fixes (the Update button and search debounce are easy to show).
-- [ ] Write "How I used AI" honestly: where it helped, where it was wrong, and how I checked it.
+- [x] Add before/after screenshots or a short GIF for at least 2 fixes (the Update button and search debounce are easy to show).
+- [x] Write "How I used AI" honestly: where it helped, where it was wrong, and how I checked it.
 
 ### 5.2 🔴 GitHub portfolio (1 h)
 
@@ -351,7 +351,7 @@ My QA work is already strong (almost all mentor reviews approved). Only polish h
 
 ### 5.3 🔴 Demo (2.5 h)
 
-- [ ] Write `demo/script.md` (5 min) following the outline in that file. Show results, not process (design feedback).
+- [x] Write `demo/script.md` (5 min) following the outline in that file. Show results, not process (design feedback).
 - [ ] Rehearse out loud in English 3 times. Record once, listen, and cut what's unclear.
 - [ ] Practice every question in `demo/hard-questions.md` without notes (3 per day all week, so this is a final pass).
 
