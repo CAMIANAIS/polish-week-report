@@ -72,35 +72,47 @@ _Status: ⏳ open · 👍 approved · ✅ merged_
 
 ## 5. Before / after
 
-| Before              | After               |
-| ------------------- | ------------------- |
-| _screenshot or GIF_ | _screenshot or GIF_ |
+**Main CI: red after merging #4 → green after #5 (API)**
+
+![CI runs on main: #120 red, #121 and #122 green](images/ci-red-to-green.png)
+
+**Search with debounce (Task Management #3):** typing "design" sends the search with the full word, not one request per letter. The requests are red because the cohort API is down; the 3 rows are retries of the same request.
+
+![Network tab: search request payload with name "design"](images/search-debounce-network.png)
 
 ## 6. How I used AI
 
-1. Using concepts I learned on CCAF certification preparation
+I used concepts I learned in my CCA-F certification preparation.
 
-### CLAUDE.md rules
+### 1. My rules for Claude (`CLAUDE.md`)
 
 - Teach, ask questions and quiz me. Don't write my fixes, tests or report text.
 - Push me to explain _why_, and to compare options and tradeoffs.
 - Keep messages short and in simple English.
 - Remind me of these rules when I drift from them.
 
-### My 2 skills (description = how Claude chooses them).
+### 2. My 2 skills
 
-- name: consistency-kebab-url-endpoints
-- Description: Audit NestJS controllers and Markdown docs for kebab-case URL violations — route naming, endpoint rename, camelCase/snake_case paths. Reports file, line, and the corrected path.
-- name: verify-kebab-rename-e2e
-- description: Run e2e tests to verify a kebab-case URL rename succeeded — old paths return 404, new paths respond with the expected status. Use after applying renames from the audit skill.
+The description is how Claude chooses which skill to use.
 
-2. How I controlled it: permissions, pre-commit, CI, DB CHECK. These are deterministic.
+| Skill | Description |
+| --- | --- |
+| `consistency-kebab-url-endpoints` | Audit NestJS controllers and Markdown docs for kebab-case URL violations: route naming, endpoint rename, camelCase/snake_case paths. Reports file, line, and the corrected path. |
+| `verify-kebab-rename-e2e` | Run e2e tests to verify a kebab-case URL rename succeeded: old paths return 404, new paths respond with the expected status. Use after applying renames from the audit skill. |
 
-3. How I checked it: independent reviewers (Kevin, Brayan, Pedro- mentors review and Julio- peer review), and the times I caught AI-generated code that didn't match my file.
+### 3. How I controlled it
 
-4. What I caught is the session I have with Claude is not able to see their mistakes, so when I want to know an inmediat second opinion is using another Desktop Claude session or Codex opinion to criticize the AI output.
+Permissions, pre-commit hooks, CI and the DB `CHECK` constraint. These are deterministic.
 
-5. When AI was wrong: I was writing issues for a peer's project. I normally ask another AI to criticize my critique and suggest what else I could add, because I want my issues to help the most. It gave me terms that his project did not have. I checked his repo, and those terms were not there. I kept only two acceptance criteria that help to measure the fix.
+### 4. How I checked it
+
+- Independent reviewers: my mentors reviewed my PRs, and a peer reviewed my projects.
+- The times I caught AI-generated code that didn't match my file.
+- The Claude session I work with is not able to see its own mistakes. So when I want an immediate second opinion, I use another Claude Desktop session or Codex to criticize the AI output.
+
+### 5. When AI was wrong
+
+I was writing issues for a peer's project. I normally ask another AI to criticize my critique and suggest what else I could add, because I want my issues to help the most. It gave me terms that his project did not have. I checked his repo, and those terms were not there. I kept only two acceptance criteria that help to measure the fix.
 
 ## 7. What I learned
 
@@ -124,6 +136,14 @@ Feedback made me grow.
 **Peer review**
 - Reply to and fix the issues my peer opened on my API (#6–#9: lint warnings, e2e env, setup docs).
 
-## 9. Daily progress
+## 9. My plan: certifications
+
+| Certification | Exam by |
+| --- | --- |
+| Claude Certified Architect – Professional | Oct 31, 2026 |
+| AWS Certified Cloud Practitioner | End of November 2026 |
+| AWS Certified Solutions Architect – Associate | End of December 2026 |
+
+## 10. Daily progress
 
 [Day 1](daily-log/day-1.md) · [Day 2](daily-log/day-2.md) · [Day 3](daily-log/day-3.md) · [Day 4](daily-log/day-4.md) · [Day 5](daily-log/day-5.md) · [Full plan](PLAN.md)
