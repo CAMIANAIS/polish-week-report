@@ -6,12 +6,7 @@ Read one line, pause, then read the next. `/` = short pause.
 
 ## 0:00–0:30 · Who I am + what I did
 
-This week I did: / I asked them for feedback, / asked my questions, / and learned deeply what was blurry.
-
-I'm ready to move forward / and use these communication skills and this product mindset / in every project.
-
-> **Other version (from the second column of the old table, so pick one or merge):**
-> This week I reviewed my 4 projects as if I were the evaluator, using AI first. I pasted all the transcripts of meetings I had with my mentors, so I have their feedback. I made a proposal of what I would fix, when, and why I chose those. I asked them about the approach and got their acceptance. I worked on PRs that were reviewed by my backend mentor and my frontend mentor. The rest (PM, design) are mostly from feedback.
+This week I reviewed my 4 projects as if I were the evaluator, using AI first. I pasted all the transcripts of meetings I had with my mentors, so I have their feedback. I made a proposal of what I would fix, when, and why I chose those. I asked them about the approach and got their acceptance. I worked on PRs that were reviewed by my backend mentor and my frontend mentor. The rest (PM, design) are mostly from feedback.
 
 ---
 
