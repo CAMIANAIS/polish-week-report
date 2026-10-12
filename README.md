@@ -49,6 +49,7 @@
 | 3   | API      | Payment links are reusable and identify the user, not the order               | Wrong orders, endless webhook retries    | 🔴       | Next step |
 | 4   | Frontend | The "Update" button in the edit modal does nothing                            | User thinks changes are saved or unsaved | 🟡       | Next step |
 | 5   | Frontend | Search sends a request on every keystroke                                     | Slow UI, wasted requests                 | 🟡       | Fixed → TM #3 |
+| 6   | Design   | Booking says "You're all set!", but the provider never accepted (Bookings shows "Pending") | Requester waits at home at 3 PM and nobody comes | 🟡 | Named the gap → Vello #1 |
 
 ## 3. What I fixed
 
@@ -62,6 +63,8 @@
 | [TM #2](https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/2) | Frontend | Lint 7 → 0: remove `any`, move hooks, contexts and constants to their own files                   | `npm run lint` 0 errors, `npm run build` passes                             | ⏳     |
 | [TM #3](https://github.com/CAMIANAIS/Task_Management_Code_Challenge/pull/3) | Frontend | Debounce search (300 ms) + ✕ clears the box and the filter                                        | Network tab: typing "design" sends only `des` and `design`                  | ⏳     |
 | [ReNest #1](https://github.com/CAMIANAIS/ReNest/pull/1)                     | PM       | Tradeoffs and decisions below 3 PRD features                                                      | Review by PM mentor                                                         | ⏳     |
+| [Vello #1](https://github.com/CAMIANAIS/vello-fidelity-review/pull/1) | Design | Finished Wednesday: my own unhappy paths with no AI, my list vs Claude's, a gap checked on the real Vello app, ProviderCard first in the README, what Claude did vs what I did, removed private link keys | I booked a provider in the real app and took a screenshot | ⏳ |
+| [Vello #2](https://github.com/CAMIANAIS/vello-fidelity-review/pull/2) | Design | Updated TanStack Start to fix a known XSS vulnerability. Vercel blocked my preview | Vercel preview deployed and I clicked through the site | ✅ |
 
 _Status: ⏳ open · 👍 approved · ✅ merged_
 
@@ -88,6 +91,19 @@ _Status: ⏳ open · 👍 approved · ✅ merged_
 - **I chose:** keep them public
 - **Because:** this is the way reviewers can log in using different roles
 - **Tradeoff:** bots or any user can, for example, deactivate products. I accept it because it is for learning purposes only.
+
+### Booking request: expires after 24 hours
+
+- **Options:** the request waits forever, or it expires
+- **I chose:** it expires after 24 hours, and the requester sees a button to choose another provider
+- **Because:** it gives the provider time to answer, and the requester doesn't wait too long. The requester may need an urgent response.
+- **Also:** if a provider backs out after accepting, the requester can book again with a discount. Vello pays. It keeps requesters trusting the app.
+
+### Security alert: update vs deploy anyway
+
+- **Options:** update TanStack Start, or deploy anyway with the "dangerous" flag
+- **I chose:** update, in a separate PR
+- **Because:** visitors could get their data stolen, and a separate PR keeps PRs small
 
 ## 5. Before / after
 
