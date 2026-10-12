@@ -61,3 +61,6 @@ Write a short answer under each question, then practice saying it without readin
 23. Why does `payment_intent.succeeded` check for `metadata.orderId` before doing anything? (`webhooks.service.ts:31-39`)
 24. Why is `clearCart` called outside the transaction, and what happens if it fails? (`webhooks.service.ts:134-152`)
 25. What happens if the stock is already 0 when the payment succeeds? (`webhooks.service.ts:64-69`, `schemaERD.sql:141`) On `main` vs. in PR #3?
+    > **My answer:**
+    > - **On main:** the CHECK fails, the webhook returns 500, and Stripe retries. The transaction rolls back, so the order stays pending. The buyer is charged with no refund, and the retries fail because the stock is still 0.
+    > - **In PR #3:** the conditional update returns count 0, so the order is cancelled and refunded. It returns 200, so Stripe stops.
