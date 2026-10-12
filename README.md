@@ -85,6 +85,13 @@ _Status: ⏳ open · 👍 approved · ✅ merged_
 - **Because:** I didn't want to overload my backend mentor, who was already reviewing my other PRs
 - **Tradeoff:** the customer loses their money and doesn't get the shirt. The store gets a bad reputation.
 
+### Cart doesn't clear if clearCart fails after payment (Q24): known limitation
+
+- **Options:** A) pass the tx prisma as a parameter to clearCart, so it rolls back with the payment, B) on retry, check if the event really finished, or don't fix it now
+- **I chose:** don't fix it now, and write it as a known limitation
+- **Because:** I prioritize practicing my hard questions in evaluation week
+- **Tradeoff:** if clearCart fails, Stripe retries, hits the unique constraint and gets a 200, so it stops retrying and the cart never gets cleared. The user can get confused about whether the payment went through.
+
 ### Demo accounts: keep them public
 
 - **Options:** remove the manager login from the README, or keep the demo accounts public
