@@ -1,24 +1,32 @@
-# Day 6: 11-10-2026
+# Day 6: Oct 11, 2026
 
 ## Top 3 for today
 
-1.
-2.
-3.
+1. Close my gaps
+2. Design feedback
+3. Security fix
 
 ## Problems explained in my own words
 
 <!-- Write this before fixing. If I can't write it, I don't understand it yet. -->
 
-Customer pays and cart still has the items, the process is clearCart fails , webhook sends error , stripe webhook happend line 22 gets error, code does return , stripe gets 200 ,stops retrying and clearCart stays the same.The default status in schemaERD.sql:305 is'processing' following what is set on schema .For Next steps I would use procesing_failed, and I would use the index idx_stripe_events_stuck
+### clearCart fails after the payment
+
+The customer pays and the cart still has the items. The process: `clearCart` fails → the webhook sends an error → Stripe retries the webhook → line 22 gets an error (P2002, the event already exists) → the code does `return` → Stripe gets 200 and stops retrying → `clearCart` never runs again.
+
+The default status in `schemaERD.sql:305` is `'processing'`, so the event stays `'processing'` forever. For next steps, I would use `processing_failed` and the index `idx_stripe_events_stuck`.
 
 ## Done
 
-- [ ] Task: … → PR [#](link)
+- Closed 2 gaps from memory (not recorded out loud yet): Q1 overselling (with the race condition and "atomic") and Q24 `clearCart` (found a hidden bug).
+- Caught another AI that was wrong about my code: `POST /orders` doesn't decrement stock, so the race test must race the webhooks.
+- Design: finished Wednesday → [Vello #1](https://github.com/CAMIANAIS/vello-fidelity-review/pull/1)
+- Security fix: updated TanStack Start for a known XSS vulnerability → [Vello #2](https://github.com/CAMIANAIS/vello-fidelity-review/pull/2) (merged)
+- Report: added the design work → [report #2](https://github.com/CAMIANAIS/polish-week-report/pull/2) (merged)
 
 ## What I learned
 
--
+- When I saw "You're all set!", I knew it was a bug that affects the user, because they think there is nothing left to do.
 
 ## Blockers / questions for my mentor
 
