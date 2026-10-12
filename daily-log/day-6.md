@@ -27,6 +27,7 @@ The default status in `schemaERD.sql:305` is `'processing'`, so the event stays 
 ## What I learned
 
 - When I saw "You're all set!", I knew it was a bug that affects the user, because they think there is nothing left to do.
+- I made a product decision, the 24-hour wait, based on the user: how the requester feels while waiting for the provider to respond.
 
 ## Blockers / questions for my mentor
 
@@ -34,6 +35,10 @@ The default status in `schemaERD.sql:305` is `'processing'`, so the event stays 
 
 ## Mentor update (sent ✅ / ❌)
 
-> **Done:** …
-> **Learned:** …
-> **Next / blocked:** …
+To the design manager: ❌ not sent yet
+
+> Hi! I applied all the feedback my design mentors gave me. I finished Wednesday and wrote myself all the unhappy paths I could think of. After that, I made a decision: the requester waits 24 hours maximum. I also found a bug: Vello shows the user "You're all set!" when they still need to wait for the provider's approval.
+>
+> PR: https://github.com/CAMIANAIS/vello-fidelity-review/pull/1
+>
+> Does this approach make sense?
