@@ -35,10 +35,10 @@ The default status in `schemaERD.sql:305` is `'processing'`, so the event stays 
 
 ## Mentor update (sent ✅ / ❌)
 
-To the design manager: ❌ not sent yet
+To the design manager: ✅ sent
 
-> Hi! I applied all the feedback my design mentors gave me. I finished Wednesday and wrote myself all the unhappy paths I could think of. After that, I made a decision: the requester waits 24 hours maximum. I also found a bug: Vello shows the user "You're all set!" when they still need to wait for the provider's approval.
+> Hi [design manager], I hope you are doing great! I applied all the feedback the design team gave me in the PDF you sent me. I finished Wednesday and wrote myself all the unhappy paths I could think of. After that, I made a decision: the requester waits 24 hours maximum. I also found a bug: Vello shows the user "You're all set!" when they still need to wait for the provider's approval.
 >
 > PR: https://github.com/CAMIANAIS/vello-fidelity-review/pull/1
 >
-> Does this approach make sense?
+> Does this approach make sense? Have an excellent start of the week!
