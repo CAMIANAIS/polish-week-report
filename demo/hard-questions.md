@@ -5,7 +5,7 @@ Write a short answer under each question, then practice saying it without readin
 ## Backend: T-Shirt Store API
 
 1. Walk me through what happens when two users pay for the last unit at the same time.
-   > **My answer:** they press buy at the same time and one of them got the shirt the other pass through the conditional update where stock is less of what he ordered he got a cancelled and will get arefund, an idepotency key is assigned to him and whenever webook retries this just receives once the refund.
+   > **My answer:** They press buy at the same time, and one of them gets the shirt. The other one goes through the conditional update, but the stock is less than what they ordered, so their order is cancelled and they get a refund. Both can't pass, because the conditional update is atomic: check and decrement in one step. The idempotency key is on the refund request, so Stripe doesn't refund twice on retry.
 2. If a Stripe event fails partway through, what does Stripe do next, and what state is left behind?
    > **My answer:** It depends where it fails.
    > - **Inside the transaction:** rollback deletes the event row, and the order stays pending. Stripe retries, and the retry starts clean.
