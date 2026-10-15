@@ -167,6 +167,25 @@ Rules for every guide (The Mom Test): ask about the **past**, not opinions about
 
 Follow-up when an answer is interesting: "¿Me cuentas más?" / "Can you tell me more?"
 
+## 3a. SHORT call with an accountant (~10 min) ← use this one
+
+1. "La última vez que revisaste facturas para crédito fiscal, ¿cuánto tiempo te tomó? ¿Cuántas eran?"
+2. "¿Por qué rechazas facturas? ¿Cuáles son las razones más comunes?"
+3. "¿Pagas hoy por alguna herramienta? ¿Cuánto al mes?"
+4. "¿Qué preferirías: que la herramienta apruebe sola, o que te marque las dudosas y tú decidas?"
+5. "La última vez que SUNAT fiscalizó a un cliente, ¿cómo demostraste por qué aceptaste una factura?"
+
+Close: "¿Conoces a otros contadores con este problema?"
+
+English:
+1. "The last time you checked invoices for tax credit, how long did it take? How many were there?"
+2. "Why do you reject invoices? What are the most common reasons?"
+3. "Do you pay for any tool today? How much per month?"
+4. "What would you prefer: the tool approves on its own, or it flags the doubtful ones and you decide?"
+5. "The last time SUNAT audited a client, how did you prove why you accepted an invoice?"
+
+Close: "Do you know other accountants with this problem?"
+
 ## 3. Call with an accountant (~15–20 min)
 
 Assumption to test: accountants lose a lot of time checking invoices for crédito fiscal and uploading entries one by one, and would pay for a tool that validates invoices automatically and uploads them in bulk.

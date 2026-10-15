@@ -37,6 +37,10 @@ Full research: `research/Aldía_ closest competitors and adjacent tools.md` and 
 - Fear of SUNAT is not what owners worry about most.
 - Many businesses are informal, not registered with SUNAT.
 - Accountants have many tools, but they still need to verify what the system does.
+- 2 of 5 accountants say it costs them hours (one said 50–70 invoices take about 2 hours). 1 of 5 already pays for a tool. Not passed yet.
+- Accountants don't fully trust any system. They always do a final check (human in the loop confirmed).
+- One accountant has never been audited. Estudios contables can even earn more when a client is audited, so the "audit record" may not sell.
+- New signal: matching SIRE vs. paper invoices (50 in SIRE, 25 on paper), and checking if an expense makes sense for the business.
 
 **Still assuming:**
 - Accountants would pay for it.
@@ -46,14 +50,15 @@ Full research: `research/Aldía_ closest competitors and adjacent tools.md` and 
 ## 4. Smallest useful version, mockup, how I'd build and test it
 
 - **Smallest version:** Aldía alerts the accountant: "you need to review these specific invoices." It checks 3 rules: the supplier's RUC is not active/habido, the CPE is not valid in SUNAT, or the invoice is missing data.
-- **Mockup:** the accountant's Excel with a new review column (e.g. "⚠️ Revisar: RUC no habido").
+- **Input:** the SIRE file the accountant already downloads (she downloads a .txt from SIRE and converts it to Excel to check it).
+- **Mockup:** the SIRE Excel with a new review column (e.g. "⚠️ Revisar: RUC no habido").
 - **Build:** by hand first (concierge MVP). I check each invoice myself with SUNAT's RUC and CPE lookup tools, to test if the idea helps before I write code.
 - **Test:** An accountant I interviewed gives me 3 invoices she rejected and 3 good ones. It works if Aldía flags all 3 rejected and none of the good ones.
 
 **Flow** (the validation step is where people had the most opinions):
 
 ```
-Accountant uploads Excel
+Accountant uploads SIRE Excel
         ↓
 Aldía checks the 3 rules
         ↓
@@ -80,6 +85,7 @@ Aldía checks the 3 rules
 - Next test: calls with 5 accountants. I'm right if 3 of 5 say it costs them hours, and 3 of 5 already pay for a tool.
 - I'll also test if accountants want a human in the loop for validation.
 - If accountants say no, I'll go back to owners and focus on client debts.
+- Test the new signal: is matching SIRE vs. paper a bigger pain than flagging invoices by rules?
 
 https://emprender.sunat.gob.pe/ruc/regimenes-tributarios-mype/nuevo-regimen-unico-simplificado-nuevo-rus
 
