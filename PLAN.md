@@ -306,6 +306,8 @@ This is direct mentor feedback.
 
 Already done after feedback ✅: intros, glossary, assumption callouts, tables.
 
+- [ ] 🆕 **Thu Oct 15, after 3 pm (after the business deliverable):** show the "why" in the UI (PM mentor feedback, Oct 14). Example: when the seller adds photos, or in onboarding, a short message that explains why every angle matters for the 5-photo rule.
+
 - [ ] Add an "Evidence vs assumptions" section. Be honest about whether Greg is a real person or an assumed persona, and list 3–5 interview questions that would validate him.
 - [ ] 🆕 Add the **seller** as a second user. Two of my top 3 risks are about sellers, and my own log says "ReNest has two users".
 - [ ] Add acceptance criteria for unhappy paths: failed upload, image limits, editing a listing, accessibility.
@@ -325,7 +327,8 @@ My QA work is already strong (almost all mentor reviews approved). Only polish h
 - [ ] 🆕 Add **one** cross-account scenario: patient B tries to cancel or edit patient A's appointment (TP-13/14 were planned but never written).
 - [ ] Can I explain severity vs priority with an example from my own work? (Note: 17 of my 20 TPs are P1. Why is that a problem?)
 - [ ] Is there one bug I am proud of finding? Write down why it matters to the user.
-- [ ] Check first whether the QA repo still accepts PRs. If not, note the fixes in my report.
+- [x] Check first whether the QA repo still accepts PRs. If not, note the fixes in my report. (Yes: PR #243 opened Oct 13.)
+- [x] 🆕 Add criticality to my sitemap (QA mentor feedback): [PR #243](https://github.com/ravn-qa/qa-nerdery-round-robbin-week-trainees/pull/243), sent to my QA mentor Oct 13.
 
 ### End of Day 4
 
