@@ -8,7 +8,7 @@
 
 ## My biggest assumption
 
-I believe accountants lose a lot of time checking invoices for crédito fiscal (input VAT credit: the sales tax paid on purchases, which a company subtracts from the sales tax it owes), and would pay for a tool that validates invoices automatically.
+I believe accountants lose a lot of time checking invoices for input VAT credit (called crédito fiscal in Peru: the sales tax paid on purchases, which a company subtracts from the sales tax it owes), and would pay for a tool that validates invoices automatically.
 
 ## How my plan changed
 
@@ -16,7 +16,7 @@ First I thought small business owners feared SUNAT. Then I learned that they car
 
 ## 1. Who it's for, the problem, and how they solve it today
 
-Aldía is for accountants in Peru who check invoices for crédito fiscal by hand.
+Aldía is for accountants in Peru who check invoices for input VAT credit by hand.
 
 **How they solve it today:**
 1. The client keeps paper invoices by month.
@@ -61,7 +61,7 @@ Aldía is for accountants in Peru who check invoices for crédito fiscal by hand
 ## 5. Pricing, marketing, first paying customers
 
 - **Price:** S/ 5 per RUC per month. With ~37 clients, that's about S/ 185 per month, small next to what they already pay.
-- **Market:** about 1.5 million taxpayers in RMT and RER can use crédito fiscal (SUNAT 2025). There are more than 63,000 registered accountants (CCPL, 2023).
+- **Market:** about 1.5 million taxpayers in RMT and RER can use input VAT credit (SUNAT 2025). There are more than 63,000 registered accountants (CCPL, 2023).
 - **Message:** "Aldía te ayuda a revisar solo las facturas dudosas."
 - **First customers:** my accountant friends first. Then the accountants' club, which holds events for all accountants. Then teachers at my university.
 - **From trying to paying:** free first month, then S/ 5 per RUC.
