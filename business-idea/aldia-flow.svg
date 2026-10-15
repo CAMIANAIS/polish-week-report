@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10" fill="none" stroke="#8a8a85" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="1400" fill="#ffffff"/>
+  <text x="80" y="70" font-size="34" font-weight="700" fill="#2f2f2c">Aldía: how it works</text>
+  <text x="80" y="108" font-size="22" fill="#6b6b66">Aldía flags doubtful invoices so accountants review only those.</text>
+
+  <g stroke="#8a8a85" stroke-width="2.2" fill="none">
+    <line x1="470" y1="240" x2="470" y2="290" marker-end="url(#a)"/>
+    <line x1="470" y1="400" x2="470" y2="450" marker-end="url(#a)"/>
+    <line x1="770" y1="510" x2="850" y2="510" marker-end="url(#a)"/>
+    <line x1="470" y1="570" x2="470" y2="620" marker-end="url(#a)"/>
+    <line x1="470" y1="730" x2="470" y2="780" marker-end="url(#a)"/>
+    <polyline points="320,840 230,840 230,914" marker-end="url(#a)"/>
+    <polyline points="620,840 710,840 710,914" marker-end="url(#a)"/>
+  </g>
+
+  <g font-size="22" fill="#55554f">
+    <text x="805" y="495">no</text>
+    <text x="490" y="603">yes</text>
+    <text x="240" y="825">approve</text>
+    <text x="640" y="825">reject</text>
+  </g>
+
+  <rect x="200" y="140" width="540" height="110" rx="18" fill="#f1efe8" stroke="#6e6e69" stroke-width="2"/>
+  <text x="470" y="180" font-size="26" font-weight="600" fill="#33332f" text-anchor="middle">Accountant uploads SIRE</text>
+  <text x="470" y="212" font-size="26" font-weight="600" fill="#33332f" text-anchor="middle">+ invoice photos</text>
+  <text x="470" y="234" font-size="17" fill="#6b6b66" text-anchor="middle">+ company plates · business line · bank payment proofs</text>
+
+  <rect x="170" y="290" width="600" height="110" rx="18" fill="#fbeee9" stroke="#b5502f" stroke-width="2.4"/>
+  <text x="470" y="330" font-size="26" font-weight="700" fill="#7a2f17" text-anchor="middle">Aldía checks 3 rules</text>
+  <text x="470" y="360" font-size="19" fill="#9a3d1f" text-anchor="middle">Is the expense for the business? · Is the fuel</text>
+  <text x="470" y="385" font-size="19" fill="#9a3d1f" text-anchor="middle">plate a company vehicle? · Paid through a bank?</text>
+
+  <rect x="170" y="450" width="600" height="120" rx="18" fill="#f1efe8" stroke="#6e6e69" stroke-width="2"/>
+  <text x="470" y="520" font-size="28" font-weight="600" fill="#33332f" text-anchor="middle">Invoice flagged?</text>
+
+  <rect x="850" y="450" width="330" height="120" rx="18" fill="#e3f3ec" stroke="#2f7a5a" stroke-width="2"/>
+  <text x="1015" y="505" font-size="26" font-weight="700" fill="#1f5c43" text-anchor="middle">Goes to Concar ✓</text>
+  <text x="1015" y="540" font-size="20" fill="#2f7a5a" text-anchor="middle">no review needed</text>
+
+  <rect x="200" y="620" width="540" height="110" rx="18" fill="#fbeee9" stroke="#b5502f" stroke-width="2.4"/>
+  <text x="470" y="665" font-size="26" font-weight="700" fill="#7a2f17" text-anchor="middle">Accountant reviews it</text>
+  <text x="470" y="702" font-size="20" fill="#9a3d1f" text-anchor="middle">only the doubtful ones</text>
+
+  <rect x="320" y="780" width="300" height="120" rx="18" fill="#f1efe8" stroke="#6e6e69" stroke-width="2"/>
+  <text x="470" y="850" font-size="26" font-weight="600" fill="#33332f" text-anchor="middle">Approve or reject?</text>
+
+  <rect x="80" y="920" width="300" height="120" rx="18" fill="#e3f3ec" stroke="#2f7a5a" stroke-width="2"/>
+  <text x="230" y="972" font-size="23" font-weight="700" fill="#1f5c43" text-anchor="middle">Record saved</text>
+  <text x="230" y="1006" font-size="20" fill="#2f7a5a" text-anchor="middle">→ Goes to Concar ✓</text>
+
+  <rect x="560" y="920" width="300" height="120" rx="18" fill="#f1efe8" stroke="#6e6e69" stroke-width="2"/>
+  <text x="710" y="972" font-size="23" font-weight="700" fill="#33332f" text-anchor="middle">Record saved</text>
+  <text x="710" y="1006" font-size="20" fill="#55554f" text-anchor="middle">→ Back to the client ✗</text>
+
+  <text x="80" y="1100" font-size="21" fill="#6b6b66">Red = the validation step, where accountants had the most opinions.</text>
+  <rect x="80" y="1140" width="1180" height="150" rx="14" fill="#fafaf7" stroke="#d6d4cc" stroke-width="1.5"/>
+  <text x="110" y="1180" font-size="21" font-weight="700" fill="#33332f">Glossary</text>
+  <text x="110" y="1218" font-size="20" fill="#55554f"><tspan font-weight="700">SIRE:</tspan> SUNAT's system where accountants download purchase and sales records. (SUNAT = Peru's tax agency)</text>
+  <text x="110" y="1254" font-size="20" fill="#55554f"><tspan font-weight="700">Concar:</tspan> the most used accounting software in Peru.</text>
+</svg>

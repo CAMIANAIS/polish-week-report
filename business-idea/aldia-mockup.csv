@@ -1,0 +1,7 @@
+Fecha,Serie-Número,RUC proveedor,Proveedor,Detalle (de la foto),IGV,Total,Moneda,Fuente,Revisar
+03/10/2026,F001-000245,20512345671,Grifo Los Andes SAC,Combustible placa ABC-123,22.88,150.00,PEN,SIRE + foto,✅ OK
+05/10/2026,F002-001120,20498765432,Llantas del Sur EIRL,2 llantas,183.05,1200.00,PEN,SIRE + foto,✅ OK
+08/10/2026,E001-000087,10456789012,Taller Mecánico Ruiz,Mantenimiento de camión,61.02,400.00,PEN,SIRE + foto,✅ OK
+10/10/2026,F001-000311,20512345671,Grifo Los Andes SAC,Combustible placa XYZ-789,30.51,200.00,PEN,SIRE + foto,⚠️ Revisar: placa no es de la empresa
+12/10/2026,F003-004521,20587654321,Electro Hogar SAC,1 televisor,228.81,1500.00,PEN,SIRE + foto,⚠️ Revisar: gasto no es del giro
+14/10/2026,F001-000098,20534567890,Repuestos Lima SAC,Repuestos de motor,450.00,2950.00,PEN,SIRE + foto,⚠️ Revisar: falta bancarización
