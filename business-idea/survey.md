@@ -174,6 +174,7 @@ Follow-up when an answer is interesting: "¿Me cuentas más?" / "Can you tell me
 3. "¿Pagas hoy por alguna herramienta? ¿Cuánto al mes?"
 4. "¿Qué preferirías: que la herramienta apruebe sola, o que te marque las dudosas y tú decidas?"
 5. "La última vez que SUNAT fiscalizó a un cliente, ¿cómo demostraste por qué aceptaste una factura?"
+6. "El último cliente que revisaste, ¿cómo te llegaron sus facturas?"
 
 Close: "¿Conoces a otros contadores con este problema?"
 
@@ -183,6 +184,7 @@ English:
 3. "Do you pay for any tool today? How much per month?"
 4. "What would you prefer: the tool approves on its own, or it flags the doubtful ones and you decide?"
 5. "The last time SUNAT audited a client, how did you prove why you accepted an invoice?"
+6. "For the last client you checked, how did their invoices arrive?"
 
 Close: "Do you know other accountants with this problem?"
 
