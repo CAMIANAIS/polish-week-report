@@ -37,9 +37,13 @@ Full research: `research/Aldía_ closest competitors and adjacent tools.md` and 
 - Fear of SUNAT is not what owners worry about most.
 - Many businesses are informal, not registered with SUNAT.
 - Accountants have many tools, but they still need to verify what the system does.
-- 2 of 5 accountants say it costs them hours (one said 50–70 invoices take about 2 hours). 1 of 5 already pays for a tool. Not passed yet.
+- 3 of 5 accountants say it costs them hours (one said 50–70 invoices take about 2 hours, another said 250 invoices take 1.5–2 hours). This part of my line passed.
+- 2 of 5 already pay for a tool (a Concar extension, and an ERP with an accounting module at S/ 450 per month with support). One more to pass.
+- Most common rejection reasons (from accountants): expenses that don't match the business, fuel invoices with plates that aren't the company's vehicles (unless there's a rental contract), the supplier billing the wrong company, and currency.
+- One accountant was audited. She defended invoices with extra documents: quotes, purchase orders, guías de remisión, bancarización for amounts above S/ 2,000, and rental contracts. So the audit record could mean linking each invoice to its proof.
+- 4 owners: only 1 had a real debt (fiado) problem. Another owner's pain was expenses and petty cash not recorded.
 - Accountants don't fully trust any system. They always do a final check (human in the loop confirmed).
-- One accountant has never been audited. Estudios contables can even earn more when a client is audited, so the "audit record" may not sell.
+- Another accountant has never been audited. Estudios contables can even earn more when a client is audited, so the "audit record" may not sell on its own. SUNAT did 9,447 determinative audit actions in 2025, so audits are rare.
 - New signal: matching SIRE vs. paper invoices (50 in SIRE, 25 on paper), and checking if an expense makes sense for the business.
 
 **Still assuming:**
