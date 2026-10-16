@@ -2,7 +2,7 @@
 
 **Aldía flags doubtful invoices so accountants review only those.**
 
-| 3 of 4 | 3 of 4 | ~2 hours | 3 of 3 |
+| 75% (3 of 4) | 75% (3 of 4) | ~2 hours | 3 of 3 |
 |---|---|---|---|
 | accountants say checking invoices costs hours | already pay for a tool | to check 50–70 invoices, one by one | check the banking channel |
 
@@ -37,7 +37,7 @@ Aldía is for accountants in Peru who check invoices for input VAT credit by han
 **Experiment:** I pitched the idea at a tech event, made a landing page (9 visits, 1 contact), interviewed 4 small business owners, and talked to 4 accountants (calls, voice messages and text).
 
 **My line:** I'm right if 3 of 5 accountants say checking invoices costs them hours, and 3 of 5 already pay for a tool.
-**Result:** 3 of 4 say it costs hours, and 3 of 4 already pay for a tool (S/ 450/month, S/ 1,500 install). **Passed.**
+**Result:** 75% (3 of 4) say it costs hours, and 75% (3 of 4) already pay for a tool (S/ 450/month, S/ 1,500 install). **Passed.**
 
 **What I learned:**
 - The most common rejection reasons: expense not for the business (3 of 3), banking channel, called bancarización in Peru (3 of 3), plate (2 of 3), detracción (2 of 3), wrong company (1 of 3).
@@ -51,7 +51,7 @@ Aldía is for accountants in Peru who check invoices for input VAT credit by han
 
 ## 4. Smallest useful version, mockup, how I'd build and test it
 
-- **Smallest version:** Aldía checks 3 rules and alerts the accountant: "review these invoices." The rules: the expense is not for the business, the fuel plate is not a company vehicle, or the invoice was not paid through a banking channel (S/ 2,000 or more).
+- **Smallest version:** Aldía checks 3 rules and alerts the accountant: "review these invoices." The rules: the expense is not for the business, the fuel plate is not a company vehicle, or the invoice was not paid through a banking channel (S/ 2,000 or more). If the plate is not from a company car, the company can't use the invoice for input VAT credit.
 - **Why banking channel and not wrong company:** 3 of 3 accountants mentioned the banking channel, and only 1 mentioned wrong company. The client can upload the bank payment voucher, so I don't need bank credentials.
 - **Input:** SIRE + invoice photos + company plates + business line + bank payment vouchers.
 - **Mockup:** see the "MVP demo" tab.

@@ -23,7 +23,7 @@ Aldia flags doubtful invoices so accountants review onnly those.
 
 I believe accountants lose a lot of time checking invoices for crédito fiscal, and would pay for a tool that validates invoices automatically.
 I'll know I'm right if 3 of 5 accountants say it costs them hours, and 3 of 5 already pay for a tool.
-**Result:** I talked to 4 accountants. 3 of 4 say it costs them hours, and 3 of 4 already pay for a tool. My line passed.
+**Result:** I talked to 4 accountants. 75% (3 of 4) say it costs them hours, and 75% (3 of 4) already pay for a tool. My line passed.
 
 ## How my plan changed
 
@@ -65,8 +65,8 @@ Full research: `research/Aldía_ closest competitors and adjacent tools.md` and 
 - Fear of SUNAT is not what owners worry about most.
 - Many businesses are informal, not registered with SUNAT.
 - Accountants have many tools, but they still need to verify what the system does.
-- 3 of 4 accountants say it costs them hours (50–70 invoices take about 2 hours, 250 invoices take 1.5–2 hours, 50–60 invoices take 2–3 hours). This part of my line passed.
-- 3 of 4 already pay for a tool (a Concar extension, an ERP with an accounting module at S/ 450 per month with support, and an accounting system that cost S/ 1,500 to install plus about $60 per year). This part of my line passed too.
+- 75% of accountants (3 of 4) say it costs them hours (50–70 invoices take about 2 hours, 250 invoices take 1.5–2 hours, 50–60 invoices take 2–3 hours). This part of my line passed.
+- 75% (3 of 4) already pay for a tool (a Concar extension, an ERP with an accounting module at S/ 450 per month with support, and an accounting system that cost S/ 1,500 to install plus about $60 per year). This part of my line passed too.
 - Most common rejection reasons (from accountants): expenses that don't match the business, fuel invoices with plates that aren't the company's vehicles (unless there's a rental contract), the supplier billing the wrong company, and currency.
 - I counted the reasons in 3 transcripts: expense not for the business 3 of 3, banking channel 3 of 3, plate 2 of 3, detracción 2 of 3, wrong company 1 of 3.
 - One accountant was audited. She defended invoices with extra documents: quotes, purchase orders, guías de remisión, bank payment proof for amounts above S/ 2,000, and rental contracts. So the audit record could mean linking each invoice to its proof.
