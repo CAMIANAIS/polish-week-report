@@ -31,11 +31,13 @@
 - **3 pillars of observability:** logs = what happened, traces = where and how long, metrics = how often.
 - **Order to debug:** metrics first (is it real, for everyone?), then traces (which step is slow?), then logs (why?).
 - **Collect vs. see:** OpenTelemetry collects the data. Datadog, New Relic and Sentry let you see it.
+- **NestJS Observe** (the tool Kevin showed me, [demo](https://www.observe-demo.nestjs.com)): free tier = metrics + traces + errors. Logs are paid. My API has `@nestjs/core` 11.2.1, so it works (needs 11.1.4+).
+- **Bug A in production** would show on the errors screen: the 500 and the stack trace. The trace shows where it failed: clearCart.
 
 ## Blockers / questions for my mentor
 -
 
 ## Next
 - Write the failing tests for clearCart, then the fix
-- Try the NestJS observability tool Kevin showed me (find the link)
+- Install NestJS Observe on my API in a new branch (secret in .env only)
 - Keep studying for Claude Certified Architect – Professional
